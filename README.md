@@ -6,63 +6,39 @@
 
 ---
 
-<details>
-  <summary>
-    <img
-      src="https://github.com/chanho0908/Interview-Concept-Summary/blob/main/image/kotlin.svg?raw=true"
-      width="14"
-      height="14"
-      style="vertical-align: middle;"
-    />
-    <strong> Kotlin</strong>
-  </summary>
 
-  - [val과 var](https://github.com/chanho0908/Interview-Concept-Summary/issues/2)
-  - [value Class](https://github.com/chanho0908/Interview-Concept-Summary/issues/4)
-  
+<details>
+  <summary><strong> Kotlin</strong></summary>
+
+- [MVP와 MVVM 패턴의 차이에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/10)
+- [value Class에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/4)
+- [val과 var의 차이점에 대해서 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/2)
+
 </details>
 
 <details>
-  <summary>
-    <img
-      src="https://github.com/chanho0908/Interview-Concept-Summary/blob/main/image/android.png?raw=true"
-      width="14"
-      height="14"
-      style="vertical-align: middle;"
-    />
-    <strong> Android</strong>
-  </summary>
+  <summary><strong> Android</strong></summary>
 
-  - [안드로이드 4대 컴포넌트](https://github.com/chanho0908/Interview-Concept-Summary/issues/3)
-  - [RecyclerView란 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/6)
-  - [Callback Hell](https://github.com/chanho0908/Interview-Concept-Summary/issues/9)
+- [Retrofit에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/12)
+- [LiveData에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/11)
+- [Callback hell(콜백지옥)을 해결하기 위한 방법으로 무엇이 있을까요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/9)
+- [RecyclerView에 대해서 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/6)
+- [안드로이드 4대 컴포넌트에 대해 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/5)
+
 </details>
 
 <details>
-  <summary>
-    <img
-      src="https://github.com/chanho0908/Interview-Concept-Summary/blob/main/image/compose.png?raw=true"
-      width="14"
-      height="14"
-      style="vertical-align: middle;"
-    />
-    <strong> Compose</strong>
-  </summary>
+  <summary><strong> Compose</strong></summary>
 
-  - [선언형 UI란?](https://github.com/chanho0908/Interview-Concept-Summary/issues/7)
+- [remember와 rememberSaveable의 차이점은 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/13)
+- [선언형 UI란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/7)
+
 </details>
 
 <details>
-  <summary>
-    <img
-      src="https://github.com/chanho0908/Interview-Concept-Summary/blob/main/image/coroutine.png?raw=true"
-      width="20"
-      height="20"
-      style="vertical-align: middle;"
-    />
-    <strong> Coroutine</strong>
-  </summary>
+  <summary><strong> Coroutine</strong></summary>
 
-  - [Coroutine이란](https://github.com/chanho0908/Interview-Concept-Summary/issues/3)
-  - [구조화된 동시성이란?](https://github.com/chanho0908/Interview-Concept-Summary/issues/8)
+- [구조화된 동시성이란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/8)
+- [Coroutine에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/3)
+
 </details>
