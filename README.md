@@ -11,7 +11,7 @@
   <summary><strong> Kotlin</strong></summary>
 
 - [스트림이란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/16)
-- [핫 스트림과 콜드 스트림의 차이에 대해 설명주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/14)
+- [파이프라인이란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/14)
 - [MVP와 MVVM 패턴의 차이에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/10)
 - [value Class에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/4)
 - [val과 var의 차이점에 대해서 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/2)
