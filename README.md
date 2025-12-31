@@ -20,6 +20,7 @@
 <details>
   <summary><strong> Android</strong></summary>
 
+- [ActivityManager란 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/15)
 - [Retrofit에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/12)
 - [LiveData에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/11)
 - [Callback hell(콜백지옥)을 해결하기 위한 방법으로 무엇이 있을까요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/9)
