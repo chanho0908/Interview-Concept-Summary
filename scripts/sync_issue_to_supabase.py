@@ -5,28 +5,24 @@ import requests
 SUPABASE_URL = os.environ["SUPABASE_URL"]
 SUPABASE_KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
 GITHUB_EVENT_PATH = os.environ["GITHUB_EVENT_PATH"]
+GITHUB_REPOSITORY = os.environ["GITHUB_REPOSITORY"]
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 
-# -------------------------------------------------
-# Load GitHub event payload
-# -------------------------------------------------
-with open(GITHUB_EVENT_PATH, "r", encoding="utf-8") as f:
-    event = json.load(f)
+HEADERS_GH = {
+    "Authorization": f"Bearer {GITHUB_TOKEN}",
+    "Accept": "application/vnd.github+json",
+}
 
-issue = event.get("issue")
+HEADERS_SB = {
+    "apikey": SUPABASE_KEY,
+    "Authorization": f"Bearer {SUPABASE_KEY}",
+    "Content-Type": "application/json",
+    "Prefer": "resolution=merge-duplicates",
+}
 
-# workflow_dispatch (전체 마이그레이션) 대비
-if issue is None:
-    print("No single issue in payload. Skipping.")
-    exit(0)
-
-# PR 제외
-if "pull_request" in issue:
-    print("Pull request detected. Skipping.")
-    exit(0)
-
-# -------------------------------------------------
-# Category mapping (label → category)
-# -------------------------------------------------
+# -------------------------
+# Category mapping
+# -------------------------
 def extract_category(labels):
     for label in labels:
         name = label["name"].lower()
@@ -34,35 +30,76 @@ def extract_category(labels):
             return name.capitalize()
     return "Uncategorized"
 
-category = extract_category(issue.get("labels", []))
 
-# -------------------------------------------------
-# Supabase UPSERT payload (스키마 정합)
-# -------------------------------------------------
-payload = {
-    "id": issue["number"],
-    "title": issue["title"],
-    "category": category,
-    "source_url": issue["html_url"],
-    "created_at": issue["created_at"],
-    "updated_at": issue["updated_at"],
-}
+# -------------------------
+# Upsert to Supabase
+# -------------------------
+def upsert_issue(issue):
+    payload = {
+        "id": issue["number"],
+        "title": issue["title"],
+        "category": extract_category(issue.get("labels", [])),
+        "source_url": issue["html_url"],
+        "created_at": issue["created_at"],
+        "updated_at": issue["updated_at"],
+    }
 
-headers = {
-    "apikey": SUPABASE_KEY,
-    "Authorization": f"Bearer {SUPABASE_KEY}",
-    "Content-Type": "application/json",
-    "Prefer": "resolution=merge-duplicates",
-}
+    res = requests.post(
+        f"{SUPABASE_URL}/rest/v1/questions",
+        headers=HEADERS_SB,
+        json=payload,
+    )
 
-response = requests.post(
-    f"{SUPABASE_URL}/rest/v1/questions",
-    headers=headers,
-    json=payload,
-)
+    if res.status_code not in (200, 201):
+        print("❌ Supabase upsert failed:", res.text)
+        exit(1)
 
-if response.status_code not in (200, 201):
-    print("❌ Supabase sync failed")
-    print("Status:", response.status_code)
-    print("Response:", response.text)
-    exit(1)
+    print(f"✅ Synced issue #{issue['number']}")
+
+
+# -------------------------
+# Main
+# -------------------------
+with open(GITHUB_EVENT_PATH, "r", encoding="utf-8") as f:
+    event = json.load(f)
+
+# 1️⃣ Issue 이벤트 기반
+if "issue" in event:
+    issue = event["issue"]
+
+    if "pull_request" in issue:
+        print("PR detected. Skipping.")
+        exit(0)
+
+    upsert_issue(issue)
+    exit(0)
+
+# 2️⃣ workflow_dispatch → 전체 이슈 마이그레이션
+print("🚀 Manual trigger detected. Syncing ALL issues...")
+
+owner, repo = GITHUB_REPOSITORY.split("/")
+
+page = 1
+while True:
+    url = f"https://api.github.com/repos/{owner}/{repo}/issues"
+    params = {
+        "state": "all",
+        "per_page": 100,
+        "page": page,
+    }
+
+    res = requests.get(url, headers=HEADERS_GH, params=params)
+    res.raise_for_status()
+
+    issues = res.json()
+    if not issues:
+        break
+
+    for issue in issues:
+        if "pull_request" in issue:
+            continue
+        upsert_issue(issue)
+
+    page += 1
+
+print("🎉 All issues synced successfully")
