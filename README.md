@@ -21,7 +21,6 @@
 <details>
   <summary><strong> Android</strong></summary>
 
-- [테스트1](https://github.com/chanho0908/Interview-Concept-Summary/issues/19)
 - [안드로이드 시스템 서비스란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/18)
 - [ActivityManager란 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/15)
 - [Retrofit에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/12)
