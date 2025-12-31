@@ -1,29 +1,32 @@
 import os
-import requests
 import json
+import requests
 
-# ENV
 SUPABASE_URL = os.environ["SUPABASE_URL"]
 SUPABASE_KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
 GITHUB_EVENT_PATH = os.environ["GITHUB_EVENT_PATH"]
 
+# -------------------------------------------------
 # Load GitHub event payload
+# -------------------------------------------------
 with open(GITHUB_EVENT_PATH, "r", encoding="utf-8") as f:
     event = json.load(f)
 
 issue = event.get("issue")
+
+# workflow_dispatch (전체 마이그레이션) 대비
 if issue is None:
-    print("No issue payload found")
+    print("No single issue in payload. Skipping.")
     exit(0)
 
-# Ignore pull requests
+# PR 제외
 if "pull_request" in issue:
-    print("PR detected, skipping")
+    print("Pull request detected. Skipping.")
     exit(0)
 
-# -------------------------
-# Category mapping rule
-# -------------------------
+# -------------------------------------------------
+# Category mapping (label → category)
+# -------------------------------------------------
 def extract_category(labels):
     for label in labels:
         name = label["name"].lower()
@@ -31,36 +34,35 @@ def extract_category(labels):
             return name.capitalize()
     return "Uncategorized"
 
-labels = issue.get("labels", [])
-category = extract_category(labels)
+category = extract_category(issue.get("labels", []))
 
-# Supabase upsert payload
-data = {
-    "id": issue["number"],                       # GitHub issue number
+# -------------------------------------------------
+# Supabase UPSERT payload (스키마 정합)
+# -------------------------------------------------
+payload = {
+    "id": issue["number"],
     "title": issue["title"],
-    "body": issue.get("body", ""),
     "category": category,
-    "labels": [l["name"] for l in labels],
     "source_url": issue["html_url"],
     "created_at": issue["created_at"],
     "updated_at": issue["updated_at"],
-    "synced_at": "now()"
 }
 
 headers = {
     "apikey": SUPABASE_KEY,
     "Authorization": f"Bearer {SUPABASE_KEY}",
     "Content-Type": "application/json",
-    "Prefer": "resolution=merge-duplicates"
+    "Prefer": "resolution=merge-duplicates",
 }
 
 response = requests.post(
     f"{SUPABASE_URL}/rest/v1/questions",
     headers=headers,
-    json=data
+    json=payload,
 )
 
 if response.status_code not in (200, 201):
     print("❌ Supabase sync failed")
-    print(response.status_code, response.text)
+    print("Status:", response.status_code)
+    print("Response:", response.text)
     exit(1)
