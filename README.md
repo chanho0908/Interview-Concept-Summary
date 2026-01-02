@@ -45,7 +45,7 @@
 <details>
   <summary><strong> Coroutine</strong></summary>
 
-- [동시성과 병렬성의 차이에 대해서 설명해 주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/22)
+- [동시성과 병렬성의 차이에 대해서 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/22)
 - [구조화된 동시성이란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/8)
 - [Coroutine에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/3)
 
