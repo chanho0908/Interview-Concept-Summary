@@ -10,6 +10,7 @@
 <details>
   <summary><strong> Kotlin</strong></summary>
 
+- [lateinit var 과 by lazy의 차이에 대해 설명해 주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/23)
 - [Cold Stream과 Hot Stream의 차이에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/21)
 - [스트림이란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/16)
 - [파이프라인이란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/14)
@@ -22,6 +23,7 @@
 <details>
   <summary><strong> Android</strong></summary>
 
+- [Room에 대해서 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/24)
 - [Bundle의 사용 목적에 대해서 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/20)
 - [안드로이드 시스템 서비스란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/18)
 - [ActivityManager란 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/15)
