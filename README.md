@@ -10,6 +10,7 @@
 <details>
   <summary><strong> Kotlin</strong></summary>
 
+- [sealed class vs sealed interface 차이 및 활용 예시에 대해서 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/31)
 - [Kotlin 스코프 함수(apply, let, run 등) 사용처와 차이에 대해서 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/28)
 - [Kotlin Generic에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/25)
 - [lateinit var 과 by lazy의 차이에 대해 설명해 주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/23)
