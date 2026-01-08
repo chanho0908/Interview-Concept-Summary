@@ -24,6 +24,7 @@
 <details>
   <summary><strong> Android</strong></summary>
 
+- [apk와 aab의 차이에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/27)
 - [ANR이란 무엇인지, ANR이 발생하는 주요 원인은 무엇이며, 어떻게 예방할 수 있는지 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/26)
 - [Room에 대해서 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/24)
 - [Bundle의 사용 목적에 대해서 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/20)
