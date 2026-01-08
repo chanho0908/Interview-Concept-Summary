@@ -26,6 +26,7 @@
 <details>
   <summary><strong> Android</strong></summary>
 
+- [픽셀이란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/32)
 - [dp와 sp의 차이에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/29)
 - [apk와 aab의 차이에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/27)
 - [ANR이란 무엇인지, ANR이 발생하는 주요 원인은 무엇이며, 어떻게 예방할 수 있는지 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/26)
