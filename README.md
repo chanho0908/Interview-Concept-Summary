@@ -10,7 +10,7 @@
 <details>
   <summary><strong> Kotlin</strong></summary>
 
-- [코틀린 Enum class와 Sealed class의 차이점을 예시를 들어 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/34)
+- [코틀린 enum class와 sealed class의 차이점을 예시를 들어 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/34)
 - [sealed class vs sealed interface 차이 및 활용 예시에 대해서 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/31)
 - [Kotlin 스코프 함수(apply, let, run 등) 사용처와 차이에 대해서 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/28)
 - [Kotlin Generic에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/25)
@@ -66,5 +66,7 @@
 
 <details>
   <summary><strong> OOP</strong></summary>
+
+- [캡슐화에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/36)
 
 </details>
