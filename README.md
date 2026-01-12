@@ -26,6 +26,7 @@
 <details>
   <summary><strong> Android</strong></summary>
 
+- [AndroidManifest 파일은 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/33)
 - [픽셀이란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/32)
 - [dp와 sp의 차이에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/29)
 - [apk와 aab의 차이에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/27)
