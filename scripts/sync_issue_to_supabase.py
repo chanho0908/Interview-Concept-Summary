@@ -26,7 +26,7 @@ HEADERS_SB = {
 def extract_category(labels):
     for label in labels:
         name = label["name"].lower()
-        if name in ["kotlin", "coroutine", "android", "compose"]:
+        if name in ["kotlin", "coroutine", "android", "compose", "OOP"]:
             return name.capitalize()
     return "Uncategorized"
 
