@@ -48,6 +48,7 @@
 <details>
   <summary><strong> Compose</strong></summary>
 
+- [컴포지션(composition)이란 무엇이며 어떻게 생성하나요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/42)
 - [Arrangement와 Alignment의 차이점에 대해서 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/17)
 - [remember와 rememberSaveable의 차이점은 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/13)
 - [선언형 UI란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/7)
