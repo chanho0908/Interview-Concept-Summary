@@ -70,6 +70,7 @@
 <details>
   <summary><strong> OOP</strong></summary>
 
+- [리스코프 치환 원칙(LSP)에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/44)
 - [인터페이스 분리 원칙(ISP)에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/41)
 - [개방 폐쇄 원칙(OCP Open Closed Principle)에 대해서 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/40)
 - [의존성 역전 원칙(DIP)에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/39)
