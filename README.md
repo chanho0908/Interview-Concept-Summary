@@ -74,7 +74,7 @@
 - [인터페이스 분리 원칙(ISP)에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/41)
 - [개방 폐쇄 원칙(OCP Open Closed Principle)에 대해서 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/40)
 - [의존성 역전 원칙(DIP)에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/39)
-- [단일 책임 원칙에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/38)
+- [단일 책임 원칙(SRP)에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/38)
 - [캡슐화에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/36)
 
 </details>
