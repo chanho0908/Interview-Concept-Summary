@@ -10,6 +10,7 @@
 <details>
   <summary><strong> Kotlin</strong></summary>
 
+- [코틀린 람다함수와 고차함수의 차이점은 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/47)
 - [Kotlin Collection 중 Mutable, Immutable Collection에 대해 설명해 주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/46)
 - [안드로이드 개발할 때 왜 코틀린을 사용하나요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/43)
 - [코틀린 enum class와 sealed class의 차이점을 예시를 들어 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/34)
