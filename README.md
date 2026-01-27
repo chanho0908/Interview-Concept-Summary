@@ -30,6 +30,7 @@
 <details>
   <summary><strong> Android</strong></summary>
 
+- [interceptor의 역할은 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/48)
 - [Activity 생명주기(LifeCycle)에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/37)
 - [AndroidManifest 파일은 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/33)
 - [픽셀이란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/32)
