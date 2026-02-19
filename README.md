@@ -31,6 +31,7 @@
 <details>
   <summary><strong> Android</strong></summary>
 
+- [Jetpack이 무엇이며, 안드로이드 개발에서 어떻게 활용되나요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/53)
 - [MVC와 MVVM의 차이에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/52)
 - [interceptor의 역할은 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/48)
 - [Activity 생명주기(LifeCycle)에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/37)
