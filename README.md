@@ -31,6 +31,7 @@
 <details>
   <summary><strong> Android</strong></summary>
 
+- [intent란 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/56)
 - [AAC ViewModel과 MVVM ViewModel의 차이점이 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/55)
 - [ViewBinding과 DataBinding의 차이점은 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/54)
 - [Jetpack이 무엇이며, 안드로이드 개발에서 어떻게 활용되나요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/53)
