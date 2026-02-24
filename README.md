@@ -10,6 +10,7 @@
 <details>
   <summary><strong> Kotlin</strong></summary>
 
+- [DSL이란 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/57)
 - [함수형 프로그래밍에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/51)
 - [코틀린 람다함수와 고차함수의 차이점은 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/47)
 - [Kotlin Collection 중 Mutable, Immutable Collection에 대해 설명해 주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/46)
