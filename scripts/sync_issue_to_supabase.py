@@ -23,11 +23,21 @@ HEADERS_SB = {
 # -------------------------
 # Category mapping
 # -------------------------
+CATEGORY_MAP = {
+    "kotlin": "Kotlin",
+    "android": "Android",
+    "compose": "Compose",
+    "coroutine": "Coroutine",
+    "oop": "OOP",
+    "os": "OS",
+}
+
+
 def extract_category(labels):
     for label in labels:
         name = label["name"].lower()
-        if name in ["kotlin", "coroutine", "android", "compose", "oop"]:
-            return name.capitalize()
+        if name in CATEGORY_MAP:
+            return CATEGORY_MAP[name]
     return "Uncategorized"
 
 
