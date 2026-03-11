@@ -92,3 +92,10 @@
 - [캡슐화에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/36)
 
 </details>
+
+<details>
+  <summary><strong> OS</strong></summary>
+
+- [프로세스에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/59)
+
+</details>
