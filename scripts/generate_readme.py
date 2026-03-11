@@ -10,6 +10,7 @@ LABEL_MAP = {
     "Compose": "Compose",
     "Coroutine": "Coroutine",
     "OOP": "OOP",
+    "OS": "OS",
 }
 
 headers = {
@@ -45,7 +46,7 @@ readme = """## Interview-Concept-Summary
 
 """
 
-for category in ["Kotlin", "Android", "Compose", "Coroutine", "OOP"]:
+for category in ["Kotlin", "Android", "Compose", "Coroutine", "OOP", "OS"]:
     items = grouped.get(category, [])
     if not items:
         continue
