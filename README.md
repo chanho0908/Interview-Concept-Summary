@@ -74,6 +74,7 @@
 <details>
   <summary><strong> Coroutine</strong></summary>
 
+- [코루틴은 왜 경량 스레드라고 불리나요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/62)
 - [CoroutineContext에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/50)
 - [Coroutine launch()와 async()의 차이점에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/35)
 - [Dispatchers.Main / IO / Default 용도 와 차이점에 대해서 설명해주세요.](https://github.com/chanho0908/Interview-Concept-Summary/issues/30)
