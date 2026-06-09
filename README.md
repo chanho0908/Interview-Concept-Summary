@@ -61,6 +61,7 @@
 <details>
   <summary><strong> Compose</strong></summary>
 
+- [LazyList에 Key를 지정하지 않으면 어떤 일이 발생하나요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/61)
 - [리컴포지션(Recomsition)에 대해 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/49)
 - [상태 호이스팅에 대해서 설명해주세요](https://github.com/chanho0908/Interview-Concept-Summary/issues/45)
 - [컴포지션(composition)이란 무엇이며 어떻게 생성하나요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/42)
