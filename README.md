@@ -32,6 +32,7 @@
 <details>
   <summary><strong> Android</strong></summary>
 
+- [네트워크 호출 같은 작업을 메인 스레드에서 하면 어떤 일이 발생하나요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/60)
 - [비트맵이란 무엇인가요 ?](https://github.com/chanho0908/Interview-Concept-Summary/issues/58)
 - [intent란 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/56)
 - [AAC ViewModel과 MVVM ViewModel의 차이점이 무엇인가요?](https://github.com/chanho0908/Interview-Concept-Summary/issues/55)
